@@ -1,0 +1,86 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+
+      <!-- images -->
+      <a-assets>
+        <img id="cabinet" src="./images/cabinet.jpeg">
+        <img id="mer" src="./images/mer.jpeg">
+        <img id="soleil" src="./images/soleil.jpeg">
+      </a-assets>
+
+      <!-- objets -->
+        <a-assets>
+            <a-asset-item id="obj" src="./objets/Statue_v1_L2.123ce0579293-53f0-494d-aebb-8a216896421b/12328_Statue_v1_L2.obj"></a-asset-item>
+            <a-asset-item id="mtl" src="./objets/Statue_v1_L2.123ce0579293-53f0-494d-aebb-8a216896421b/12328_Statue_v1_L2.mtl"></a-asset-item>
+            <a-asset-item id="obj1" src="./objets/Statue_v1_L3.123c1d1513f2-b887-4c4c-a696-e12aa48e6dcf/12338_Statue_v1_L3.obj"></a-asset-item>
+            <a-asset-item id="mtl1" src="./objets/Statue_v1_L3.123c1d1513f2-b887-4c4c-a696-e12aa48e6dcf/12338_Statue_v1_L3.mtl"></a-asset-item>
+            <a-asset-item id="obj2" src="./objets/pearlturtle_v1_L2.123c8b254914-0c70-4cc6-bc03-8d58f36d90c5/13103_pearlturtle_v1_l2.obj"></a-asset-item>
+            <a-asset-item id="mtl2" src="./objets/pearlturtle_v1_L2.123c8b254914-0c70-4cc6-bc03-8d58f36d90c5/13103_pearlturtle_v1_l2.mtl"></a-asset-item>
+            <a-asset-item id="obj3" src="./objets/10446_Palm_Tree_v1_L3.123c0a37e64c-4659-4136-a23d-059cbcde3ecd/10446_Palm_Tree_v1_max2010_iteration-2.obj"></a-asset-item>
+            <a-asset-item id="mtl3" src="./objets/10446_Palm_Tree_v1_L3.123c0a37e64c-4659-4136-a23d-059cbcde3ecd/10446_Palm_Tree_v1_max2010_iteration-2.mtl"></a-asset-item>
+            <a-asset-item id="obj4" src="./objets/Palm_Tree_and_Treasure_chest_v1_L1.123ce5c3b950-9e3c-4549-8a46-f27b11cac3a4/14055_Palm_Tree_and_Treasure_chest_v1_L1.obj"></a-asset-item>
+            <a-asset-item id="mtl4" src="./objets/Palm_Tree_and_Treasure_chest_v1_L1.123ce5c3b950-9e3c-4549-8a46-f27b11cac3a4/14055_Palm_Tree_and_Treasure_chest_v1_L1.mtl"></a-asset-item>
+            <a-asset-item id="obj5" src="./objets/arm_v1_L1.123c04818f93-7155-440c-8453-85a0c620cb40/12682_arm_v1_FINAL.obj"></a-asset-item>
+            <a-asset-item id="mtl5" src="./objets/arm_v1_L1.123c04818f93-7155-440c-8453-85a0c620cb40/random.mtl"></a-asset-item>
+            <a-asset-item id="obj6" src="./objets/arm_V3_L1.123cca2f1b2f-a573-4e9d-9bc8-a96424b196fb/11535_arm_V3_.obj"></a-asset-item>
+            <a-asset-item id="mtl6" src="./objets/arm_V3_L1.123cca2f1b2f-a573-4e9d-9bc8-a96424b196fb/Blank.mtl"></a-asset-item>
+            <a-asset-item id="obj7" src="./objets/Zombie_Arm_v1_L1.123cfedfc7cb-d732-4f93-b332-3bd136a56790/15742_Zombie_Arm_v1.obj"></a-asset-item>
+            <a-asset-item id="mtl7" src="./objets/Zombie_Arm_v1_L1.123cfedfc7cb-d732-4f93-b332-3bd136a56790/Blank.mtl"></a-asset-item>
+            <a-asset-item id="obj8" src="./objets/vhmnifalctmo-lego551232512424/lego obj.obj"></a-asset-item>
+            <a-asset-item id="mtl8" src="./objets/vhmnifalctmo-lego551232512424/lego obj.mtl"></a-asset-item>
+            <a-asset-item id="obj9" src="./objets/E-45-Aircraft/E 45 Aircraft_obj.obj"></a-asset-item>
+            <a-asset-item id="mtl9" src="./objets/E-45-Aircraft/E 45 Aircraft_obj.mtl"></a-asset-item>
+            <a-asset-item id="obj10" src="./objets/70-boschwasher/BOSCH WLG.obj"></a-asset-item>
+            <a-asset-item id="mtl10" src="./objets/70-boschwasher/BOSCH WLG.mtl"></a-asset-item>
+            <a-asset-item id="obj11" src="./objets/Beach_Towels_v2_L2.123cfdc7c58d-ab2d-4ff1-90bd-042d1339b7cb/13519_Beach_Towels_v2_L2.obj"></a-asset-item>
+            <a-asset-item id="mtl11" src="./objets/Beach_Towels_v2_L2.123cfdc7c58d-ab2d-4ff1-90bd-042d1339b7cb/13519_Beach_Towels_v2_L2.mtl"></a-asset-item>
+            <a-asset-item id="obj12" src="./objets/Beach_Umbrella_v1_L3.123c27e1c910-e8d1-402a-92ef-8deb29426cbe/13518_Beach_Umbrella_v1_L3.obj"></a-asset-item>
+            <a-asset-item id="mtl12" src="./objets/Beach_Umbrella_v1_L3.123c27e1c910-e8d1-402a-92ef-8deb29426cbe/13518_Beach_Umbrella_v1_L3.mtl"></a-asset-item>
+            <a-asset-item id="obj13" src="./objets/Statue_v1_L2.123cc93d694a-81fb-4c81-8a75-7fa010dfa777/12330_Statue_v1_L2.obj"></a-asset-item>
+            <a-asset-item id="mtl13" src="./objets/Statue_v1_L2.123cc93d694a-81fb-4c81-8a75-7fa010dfa777/12330_Statue_v1_L2.mtl"></a-asset-item>
+            <a-asset-item id="obj14" src="./objets/Charging_Bull_Statue_of_Wall_Street_v1_L8b0a8778-572e-45ba-839e-64930e572820/13927_Charging_Bull_Statue_of_Wall_Street_v1_L1.obj"></a-asset-item>
+            <a-asset-item id="mtl14" src="./objets/Charging_Bull_Statue_of_Wall_Street_v1_L8b0a8778-572e-45ba-839e-64930e572820/13927_Charging_Bull_Statue_of_Wall_Street_v1_L1.mtl"></a-asset-item>
+            <a-asset-item id="obj15" src="./objets/Statue_v1_L3.123c486337cf-e6cb-4d07-9505-888fb510c843/12334_statue_v1_l3.obj"></a-asset-item>
+            <a-asset-item id="mtl15" src="./objets/Statue_v1_L3.123c486337cf-e6cb-4d07-9505-888fb510c843/12334_statue_v1_l3.mtl"></a-asset-item>
+            <a-asset-item id="obj16" src="./Statue_v1_L1.123cf020acae-1ed0-40d1-96be-f0c4aa3e10ae/12337_Statue_v1_l1.obj"></a-asset-item>
+            <a-asset-item id="mtl16" src="./Statue_v1_L1.123cf020acae-1ed0-40d1-96be-f0c4aa3e10ae/12337_Statue_v1_l1.mtl"></a-asset-item>
+          </a-assets>
+
+
+          <a-entity position="0.75 0 1.75" scale="0.01 0.01 0.01" rotation="-90 -90 0" obj-model="obj: #obj; mtl: #mtl"></a-entity>
+          <a-entity position="-0.75 0 1.5" scale="0.01 0.01 0.01" rotation="-90 180 0" obj-model="obj: #obj1; mtl: #mtl1"></a-entity>
+          <a-entity position="1.8 3 -1.5" scale="0.05 0.05 0.05" rotation="0 -90 180" obj-model="obj: #obj2; mtl: #mtl2"></a-entity>
+          <a-entity position="-0.75 0 -0.75" scale="0.004 0.004 0.004" rotation="-90 0 0" obj-model="obj: #obj3; mtl: #mtl3"></a-entity>
+          <a-entity position="0.35 4 0" scale="0.002 0.002 0.002" rotation="90 0 0" obj-model="obj: #obj4; mtl: #mtl4"></a-entity>
+          <a-entity position="1.25 0.7 -0.66" scale="0.09 0.09 0.09" rotation="-90 -90 90" obj-model="obj: #obj5; mtl: #mtl5"></a-entity>
+          <a-entity position="-1.43 2 1.5" scale="0.05 0.05 0.05" rotation="90 -90 90" obj-model="obj: #obj6; mtl: #mtl6"></a-entity>
+          <a-entity position="0 1 0" scale="0.05 0.05 0.05" rotation="0 180 0" obj-model="obj: #obj7; mtl: #mtl7"></a-entity>
+          <a-entity position="-1.5 0 0.5" scale="0.02 0.02 0.02" rotation="0 90 0" obj-model="obj: #obj8; mtl: #mtl8"></a-entity>
+          <a-entity position="-1.35 2.5 -0.5" scale="0.5 0.5 0.5" rotation="0 0 0" obj-model="obj: #obj9; mtl: #mtl9"></a-entity> 
+          <a-entity position="0 1.8 -1" scale="0.003 0.003 0.003" rotation="0 0 0" obj-model="obj: #obj10; mtl: #mtl10"></a-entity> 
+          <a-entity position="2 2 0.5" scale="0.01 0.01 0.01" rotation="0 -90 180" obj-model="obj: #obj11; mtl: #mtl11"></a-entity> 
+          <a-entity position="1 4 1.25" scale="0.02 0.02 0.02" rotation="90 -90 180" obj-model="obj: #obj12; mtl: #mtl12"></a-entity>
+          <a-entity position="0.6 0.25 -0.7" scale="0.05 0.05 0.05" rotation="-90 0 0" obj-model="obj: #obj2; mtl: #mtl2"></a-entity>  
+          <a-entity position="-0.35 0 0.3" scale="0.005 0.005 0.005" rotation="-90 0 0" obj-model="obj: #obj13; mtl: #mtl13"></a-entity> 
+          <a-entity position="1 0 0.6" scale="0.004 0.004 0.004" rotation="-90 -90 0" obj-model="obj: #obj14; mtl: #mtl14"></a-entity> 
+          <a-entity position="0 0.9 -0.7" scale="0.001 0.001 0.001" rotation="-90 -90 0" obj-model="obj: #obj15; mtl: #mtl15"></a-entity> 
+          <a-entity position="-1.7 0 -1.4" scale="0.001 0.001 0.001" rotation="-90 90 0" obj-model="obj: #obj16; mtl: #mtl16"></a-entity>   
+       
+          <!-- murs -->
+        <a-plane position="0 0 0" rotation="90 0 0"  width="4" height="4" color="#7BC8A4" side="double" src="#mer"></a-plane>
+       <a-plane position="0 2 -2" rotation="0 0 0"  width="4" height="4" color="#7BC8A4" side="double" src="#cabinet"></a-plane>
+       <a-plane position="0 4 0" rotation="90 90 0"  width="4" height="4" color="#7BC8A4" side="double" src="#soleil"></a-plane>
+       <a-plane position="2 2 0" rotation="0 90 90"  width="4" height="4" color="#7BC8A4" side="double" src="#cabinet"></a-plane>
+       <a-plane position="-2 2 0" rotation="0 90 90"  width="4" height="4" color="#7BC8A4" side="double" src="#cabinet"></a-plane>
+       <a-plane position="-1.25 2 2" rotation="0 0 90"  width="4" height="1.5" color="#7BC8A4" side="double" src="#cabinet"></a-plane>
+       <a-plane position="1.25 2 2" rotation="0 0 90"  width="4" height="1.5" color="#7BC8A4" side="double" src="#cabinet"></a-plane>
+       
+       <!-- ciel -->
+       <a-sky src="#soleil"></a-sky>
+    </a-scene>
+  </body>
+</html>
