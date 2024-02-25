@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+
+      <a-assets>
+        <a-asset-item id="glb" src="./maquette2.glb"></a-asset-item>
+      </a-assets>
+
+        <a-entity position="0 0 -4" scale="10 10 10"
+        gltf-model="#glb"></a-entity>
+
+        <a-entity light="type: hemisphere; color: #D78F57; groundColor: #FFFFFF; intensity: 1">
+        </a-entity>
+
+        <a-entity light="type: spot;color: #FFFFFF; angle: -45; intensity: 1.5" position="0.35 4.5 -4" rotation="-90 0 0"></a-entity>
+        
+
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#33C"></a-plane>
+      <a-sky color="#000000"></a-sky>
+    </a-scene>
+  </body>
+</html>
