@@ -6,4 +6,4 @@
 * [What a mess !](./cube_3D.html)
 * [architecture](./architecture.html)
 * [I am flying !](./iamflying_full_etudiant.html)
-* [paysage](./skybox.html)
+* [paysage](./skybox/skybox.html)
