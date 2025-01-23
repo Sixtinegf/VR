@@ -7,7 +7,7 @@
 * [architecture](./architecture.html)
 * [I am flying !](./iamflying_full_etudiant.html)
 * [paysage](./skybox/skybox.html)
-* [AR_Arcade](./AR_Arcade/skybox.html)
-* 
+* [AR_Arcade](./AR_ARCADE/3_aframe_ar/0_test_marker_sixtine.html)
+ 
 
   
